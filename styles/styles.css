@@ -13,7 +13,16 @@ body {
     font-family: 'IBM Plex Mono', monospace;
     max-width: 400px;
   }
-   
+
+.noMostrar{
+  display: none;
+}
+  
+iframe { 
+    border: 0px; 
+    background-color: transparent;
+  }
+
 h1 {
   font-size: 36px;
   font-weight: lighter;
@@ -44,6 +53,14 @@ p{
 
 .firstParagraph{
   width: 100%;
+}
+
+.firstParagraph_desktop{
+  display: inline-block;
+}
+
+.firstParagraph_mobile{
+  display: none;
 }
 
   .respmenu a { 
@@ -126,8 +143,9 @@ p{
     margin-left: 16px;
   }
   .episodios div {
-    padding-left: 50px;
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
     display: flex;
     flex-direction: column;
   }
@@ -295,6 +313,14 @@ p{
   
   p{
     font-size: 16px;
+  }
+
+  .firstParagraph_desktop{
+    display: none;
+  }
+  
+  .firstParagraph_mobile{
+    display: inline-block;
   }
 
  
